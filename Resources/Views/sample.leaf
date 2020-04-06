@@ -1,0 +1,21 @@
+
+ <!doctype html>
+ <html lang="en">
+ <head>
+ <meta charset="utf-8" />
+ <tittle>Bio Lab</tittle>
+ </head>
+ <body>
+ <h1>#(tittle) for #(user.firstName) #(user.lastName)</h1>
+    <h2>Age: #(user.age)</h2>
+
+    <h2>#count(samples) Samples</h2>
+    <ul>
+    #for(sample in samples) {
+        <li>
+        #(sample.id) #(sample.isProcessed)
+        </li>
+    }
+    </ul> 
+ </body>
+ </html>
